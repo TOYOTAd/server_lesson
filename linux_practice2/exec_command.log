@@ -1,0 +1,180 @@
+    1  cd /root
+    2  mkdir server_lesson && cd server_lesson
+    3  yum update -y && yum -y install git
+    4  git version
+    5  git init
+    6  touch first.txt
+    7  ls
+    8  git status
+    9  git add first.txt
+   10  git status
+   11  git commit -m 'first commit'
+   12  git log
+   13  git status
+   14  mkdir linux_practice1
+   15  ls
+   16  cd linux_practice1
+   17  ls
+   18  mkdir public
+   19  ls
+   20  cd public
+   21  touch index.php
+   22  ls
+   23  cd index.php index_bk.php
+   24  cp index.php index_bk.php
+   25  ls
+   26  cd ..
+   27  ls
+   28  cp public tmp
+   29  ls
+   30  cp -r public tmp
+   31  ls
+   32  cd temp
+   33  cd tmp
+   34  ls
+   35  rm index_bk.php
+   36  ls
+   37  cd ..
+   38  cd ..
+   39  touch README.md
+   40  ls
+   41  vi README.md
+   42  cat README.md
+   43  git status
+   44  ls
+   45  mkdir documents
+   46  ls
+   47  cd documents
+   48  touch gizumo{01..50}.md
+   49  ls
+   50  cd..
+   51  cd ..
+   52  ls
+   53  mkdir linux_practice2
+   54  ls
+   55  mv documents linux_practice2/documents
+   56  ls
+   57  cd linux_practice2
+   58  ls
+   59  mkdir trash
+   60  ls
+   61  mv documents/gizumo{20..40}.md trash/gizumo{20..40}.md
+   62  mv documents/gizumo{20..40}.md trash
+   63  ls
+   64  trash
+   65  cd trash
+   66  ls
+   67  cd ..
+   68  ls
+   69  touch .gitignore
+   70  ls
+   71  ls
+   72  git status
+   73  ls -a
+   74  vi .gitignore
+   75  ls
+   76  cd trash
+   77  ls
+   78  cd ..
+   79  ls -a
+   80  vi .gitignore
+   81  ls
+   82  cd trash
+   83  ls
+   84  cd ..
+   85  cd ..
+   86  git status
+   87  git diff
+   88  ls
+   89  git init
+   90  git status
+   91  add README.md
+   92  git add README.md
+   93  git status
+   94  git add linux_practice1/
+   95  git status
+   96  git add linux_practice2/
+   97  git status
+   98  git commit -m 'first commit'
+   99  git status
+  100  git commit -m 'first commit'
+  101  git config user.email desertcandle.forwork@gmail.com
+  102  git config user.name TOYOTAd
+  103  git commit -m 'first commit'
+  104  git status
+  105  git log
+  106  git remote add origin https://github.com/TOYOTAd/server_lesson.git
+  107  git remote -v
+  108  git push origin master
+  109* git push or
+  110  git push origin master
+  111  git push origin master
+  112  git push origin master
+  113  ls
+  114  cd linux_practice2
+  115  ls
+  116  cd trash
+  117  ls
+  118  cd ..
+  119  ls -a
+  120  vi .gitignore
+  121  cd trash
+  122  ls
+  123  cd ..
+  124  cd ..
+  125  git status
+  126  git add  linux_practice2
+  127  git status
+  128  git commit -m 'second commit'
+  129  git push origin master
+  130  git push origin master
+  131  cd linux_practice2
+  132  cd trash
+  133  ls
+  134  git rm --cached gizumo{20-29}.md
+  135  git rm --cached gizumo{20..29}.md
+  136  cd ..
+  137  cd ..
+  138  git add linux_practice2
+  139  ls
+  140  git status
+  141  git status
+  142  git add .
+  143  git status
+  144  git log
+  145  git diff
+  146  git status
+  147  ls
+  148  rm first.txt
+  149  git add .
+  150  git status
+  151  git commit -m 'third commit'
+  152  git add .
+  153  git add first.txt
+  154  git status
+  155  git add first.txt
+  156  git add .
+  157  git status
+  158  git commit -a
+  159  git commit -m 'third commit'
+  160  git rm $(git ls-files --deleted)
+  161  git status
+  162  git commit -m 'third commit'
+  163  git push origin master
+  164  ls
+  165  cd linux_practice2
+  166  ls
+  167  cd trash
+  168  ls
+  169  git rm --cached gizumo{20..29}.md
+  170  git status
+  171  git commit -m "Remove ignore files"
+  172  git push origin master
+  173  cd ..
+  174  cd ..
+  175  git rm -r --cached
+  176  ls
+  177  cd linux_practice2
+  178  touch exec_command.log
+  179  ls
+  180  history 300 >> exec_command.log
